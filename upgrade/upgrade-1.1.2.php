@@ -6,7 +6,7 @@ if (!defined('_PS_VERSION_')) {
 
 function upgrade_module_1_1($module)
 {
-    echo 'ici';
+    echo 'la';
 
     // do your thing here
     return true;
