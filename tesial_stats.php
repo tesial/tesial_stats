@@ -13,12 +13,9 @@ class Tesial_Stats extends Module
         $this->bootstrap = true;
         parent::__construct();
 
-        $this->displayName = $this->trans('Statistics', [], 'Modules.Tesial_Stats.Admin');
-        $this->description = $this->trans('Statistics for Tesial', [], 'Modules.Tesial_Stats.Admin');
+        $this->displayName = 'Statistics';
+        $this->description = 'Statistics for Tesial';
         $this->ps_versions_compliancy = ['min' => '1.6.0.0', 'max' => _PS_VERSION_];
-
-//        exec("git pull https://user:password@bitbucket.org/user/repo.git master");
-        shell_exec("git pull https://user:password@github.com:user/repo.git main");
     }
 
     public function install()
