@@ -3,7 +3,7 @@
 require_once __DIR__.'/../../config/config.inc.php';
 
 $output=null;
-exec('git pull', $output);
+exec('cd '.__DIR__.' && git pull', $output);
 
 dump($output);exit;
 
