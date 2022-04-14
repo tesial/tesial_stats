@@ -5,7 +5,7 @@ require_once __DIR__.'/../../config/config.inc.php';
 $output=null;
 exec('git pull', $output);
 
-dump($output);exit;exit;
+dump($output);exit;
 
 $data = [
     'prestashop' => [
