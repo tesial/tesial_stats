@@ -17,7 +17,7 @@ function getSalesCountByCountry()
 }
 
 $data = [
-    'prestabob' => [
+    'prestashop' => [
         'version' => _PS_VERSION_,
         'majorVersion' => substr(_PS_VERSION_, 0, 3),
     ],
