@@ -7,7 +7,7 @@ function getSalesCountByCountry()
     $db = Db::getInstance();
 
     return $db->executeS('
-        SELECT c.iso_code, SUM(o.total_paid_real) as total
+        SELECT c.iso_code, COUNT(o.id_order) AS total_count, SUM(o.total_paid_real) AS total_paid
         FROM '._DB_PREFIX_.'orders o
         LEFT JOIN '._DB_PREFIX_.'address ad ON (o.id_address_delivery = ad.id_address)
         LEFT JOIN '._DB_PREFIX_.'country c USING (id_country)
